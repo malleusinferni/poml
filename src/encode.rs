@@ -28,7 +28,7 @@ struct EncoderV1 {
 
 impl EncoderV1 {
     fn new() -> Self {
-        let buf = "#!poml v1\n".to_owned();
+        let buf = "#?poml v1\n".to_owned();
         let depth = 0;
         EncoderV1 { buf, depth }
     }
@@ -104,6 +104,6 @@ fn examples() {
         ]
     });
 
-    let expected = "#!poml v1\n#BODY X=1 Y=2\n";
+    let expected = "#?poml v1\n#BODY X=1 Y=2\n";
     assert_eq!(expected, doc.to_string().unwrap());
 }

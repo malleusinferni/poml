@@ -5,7 +5,7 @@
 It looks like this:
 
 ```poml
-#!poml v1
+#?poml v1
 #parent
 The "contents" of a tag can be any text, comprising any number of lines,
 as long as none of them start with an octothorpe ("#")
