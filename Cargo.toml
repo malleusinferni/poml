@@ -1,0 +1,6 @@
+[package]
+name = "poml"
+version = "0.0.1"
+
+[dependencies]
+serde = "1.0"
